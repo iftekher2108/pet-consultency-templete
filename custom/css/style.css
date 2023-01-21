@@ -1,0 +1,189 @@
+
+
+
+
+
+
+:root {
+    --nav-bg-color:#daac00;
+    --btn-bg-color:#00bec9;
+    --btn-bg-color-hover:#0cadb6;
+    --bg-color:#fcc302;
+    --transition: all 0.3s ease-in-out;
+    
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* =============================nav bar start======================================== */
+
+nav.navbar {
+    background: var(--nav-bg-color) !important;
+}
+
+nav.navbar form input[type=text]::placeholder {
+    color: white;
+}
+
+nav.navbar form input[type=text] {
+    box-shadow: none !important;
+    border: 0px !important;
+    background: var(--bg-color);
+}
+
+nav.navbar form button[type=submit] {
+    background: var(--btn-bg-color);
+    transition: all 0.3s ease-in-out;
+}
+nav.navbar form button[type=submit]:hover {
+    background: var(--btn-bg-color-hover);
+
+
+}
+
+
+
+/* ==============================nav bar end=========================================== */
+
+
+
+/* ======================hero content start ================================= */
+
+.hero {
+    background: var(--bg-color);
+}
+
+button {
+    font-weight: 700 !important;
+}
+
+.but-group button:nth-child(1),.animals-content button {
+    color: white;
+    background: var(--btn-bg-color) !important;
+    transition: var(--transition);
+    border: 2px solid var(--btn-bg-color);
+}
+
+.animals-content button:hover,.but-group button:nth-child(1):hover {
+    background: white !important;
+    color: var(--btn-bg-color) !important;
+    border: 2px solid var(--btn-bg-color) !important;
+}
+
+.but-group button:nth-child(2) {
+    transition: var(--transition);
+}
+
+.but-group button:nth-child(2):hover {
+    color: var(--btn-bg-color);
+}
+
+
+/* =========================hero content end================================================ */
+
+
+
+/* ==========================love animals start========================================= */
+
+.love-animals button {
+    background: var(--btn-bg-color);
+}
+
+
+
+
+
+/* ==========================love animals end============================================ */
+.animal-video{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.animal-video::before {
+content:'';
+position: absolute;
+top:42% ;
+left:42%;
+height: 0px;
+width: 0px;
+border-top: 50px solid white;
+border-radius:15px !important;
+border-left: 40px solid transparent; 
+border-right: 40px solid transparent;
+transform: rotate(-90deg) scale(0.5);
+z-index: 1;
+}
+.animal-video::after {
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 95%;
+    top: 2%;
+    left: 4%;
+    bottom: 20%;
+    background: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+.animal-video:hover::after {
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 95%;
+    top: 5%;
+    left: 5%;
+    bottom: 20%;
+    background: var(--bg-color);
+    z-index: -1;
+}
+
+
+
+
+/* ================================health care start here=================================== */
+
+.health-care,.pet-buy-menu {
+    background: var(--bg-color);
+}
+
+
+
+
+
+
+/* ================================health care end here====================================== */
+
+/* ==========pet buy menu============ */
+
+.pet-buy-menu button {
+    background:#00bec9;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #00bec9;
+
+}
+
+.pet-buy-menu button:hover {
+    background:white !important;
+    border-radius: 50px;
+    color: #00bec9 !important;
+    border-color: #00bec9 !important;
+    
+
+
+}
+
+
+
+
+/* ===========pet buy menu============= */
+
+
