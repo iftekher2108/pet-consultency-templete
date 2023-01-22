@@ -110,28 +110,14 @@ button {
 /* ==========================love animals end============================================ */
 .animal-video{
     position: relative;
+    aspect-ratio: 2/3;
     transition: all 0.3s ease-in-out;
-}
-
-.animal-video::before {
-content:'';
-position: absolute;
-top:42% ;
-left:42%;
-height: 0px;
-width: 0px;
-border-top: 50px solid white;
-border-radius:15px !important;
-border-left: 40px solid transparent; 
-border-right: 40px solid transparent;
-transform: rotate(-90deg) scale(0.5);
-z-index: 1;
 }
 .animal-video::after {
     content: "";
     position: absolute;
-    height: 90%;
-    width: 95%;
+    height: 25%;
+    width: 50%;
     top: 2%;
     left: 4%;
     bottom: 20%;
@@ -142,7 +128,7 @@ z-index: 1;
 .animal-video:hover::after {
     content: "";
     position: absolute;
-    height: 90%;
+    height: 32%;
     width: 95%;
     top: 5%;
     left: 5%;
