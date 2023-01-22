@@ -110,14 +110,14 @@ button {
 /* ==========================love animals end============================================ */
 .animal-video{
     position: relative;
-    aspect-ratio: 2/3;
+    /* aspect-ratio: 2/3; */
     transition: all 0.3s ease-in-out;
 }
 .animal-video::after {
     content: "";
     position: absolute;
-    height: 25%;
-    width: 50%;
+    /* height: 25%;
+    width: 50%; */
     top: 2%;
     left: 4%;
     bottom: 20%;
@@ -128,8 +128,8 @@ button {
 .animal-video:hover::after {
     content: "";
     position: absolute;
-    height: 32%;
-    width: 95%;
+    /* height: 32%;
+    width: 95%; */
     top: 5%;
     left: 5%;
     bottom: 20%;
