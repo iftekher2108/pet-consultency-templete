@@ -185,7 +185,7 @@ button {
 .social-icon a {
  padding: 6px;
  background: var(--bg-color);
- border-radius: 50%;
+ border-radius: 0.8rem;
  color:white;
  transition: var(--transition);
  /* border: 1px solid var(--bg-color); */
