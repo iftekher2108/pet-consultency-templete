@@ -1,5 +1,5 @@
 
-
+@import url(./block.min.css);
 
 
 
@@ -259,3 +259,46 @@ button {
 
 
 /* =================recent post======================= */
+
+
+
+/* ========================== 2 image blocks =========================== */
+.img-block {
+    position: relative;
+}  
+.img-block::before {
+        content: '';
+        top: -25%;
+        right: -25%;
+        border-radius: 1rem;
+        position: absolute;
+        background: var(--bs-primary);
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        z-index: -1;
+}
+
+    .img-block::after {
+        content: '';
+        bottom: -25%;
+        left: -25%;
+        border-radius: 1rem;
+        position: absolute;
+        border:5px solid var(--bs-primary);
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        z-index: 1;
+    }
+/* ========================== 2 image blocks =========================== */
+
+
