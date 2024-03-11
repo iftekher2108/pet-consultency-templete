@@ -1,14 +1,10 @@
 
-@import url(./block.min.css);
-
-
-
 
 :root {
     --nav-bg-color:#daac00;
     --btn-bg-color:#00bec9;
     --btn-bg-color-hover:#0cadb6;
-    --bg-color:#fcc302;
+    --bg-color:var(--bs-primary);
     --bg-post-color:rgba(252, 242, 216, 0.973);
     --transition: all 0.3s ease-in-out;
     
@@ -60,15 +56,33 @@ form button[type=submit]:hover {
 
 
 
-/* ======================hero content start ================================= */
 
-.hero {
-    background: var(--bg-color);
-}
+/* ============================= utilities =========================================== */
 
+
+/* ============================= utilities =========================================== */
 button {
     font-weight: 700 !important;
 }
+
+.btn {
+    transition: all 0.3s ease-in-out !important;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -moz-transition: all 0.3s ease-in-out !important;
+    -ms-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+}
+
+.btn-outline-info:hover{
+    color: white !important;
+}
+/* ======================hero content start ================================= */
+
+.hero {
+    background:linear-gradient(109.6deg, var(--nav-bg-color) 10%, rgb(255, 230, 0) 100%);;
+}
+
+
 
 .but-group button:nth-child(1),.animals-content button {
     color: white;
@@ -102,44 +116,12 @@ button {
     background: var(--btn-bg-color);
 }
 
+/* ========================== love animals end ============================================ */
 
 
 
 
-/* ==========================love animals end============================================ */
-.animal-video{
-    position: relative;
-    /* aspect-ratio: 2/3; */
-    transition: all 0.3s ease-in-out;
-}
-.animal-video::after {
-    content: "";
-    position: absolute;
-    /* height: 25%;
-    width: 50%; */
-    top: 2%;
-    left: 4%;
-    bottom: 20%;
-    background: var(--bg-color);
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-}
-.animal-video:hover::after {
-    content: "";
-    position: absolute;
-    /* height: 32%;
-    width: 95%; */
-    top: 5%;
-    left: 5%;
-    bottom: 20%;
-    background: var(--bg-color);
-    z-index: -1;
-}
-
-
-
-
-/* ================================health care start here=================================== */
+/* ================================ health, pet-buy care bg start here =================================== */
 
 .health-care,.pet-buy-menu {
     background: var(--bg-color);
@@ -147,12 +129,9 @@ button {
 
 
 
+/* ================================ health, pet-buy care bg end here ====================================== */
 
-
-
-/* ================================health care end here====================================== */
-
-/* ==========pet buy menu============ */
+/* ================================ pet buy menu ================================= */
 
 .pet-buy-menu button {
     background:#00bec9;
@@ -175,7 +154,8 @@ button {
 
 
 
-/* ===========pet buy menu============= */
+/* ================================ pet buy menu ================================= */
+
 
 
 
@@ -183,17 +163,30 @@ button {
 /* =============social icon=============== */
 
 .social-icon a {
- padding: 6px;
+    text-decoration: none;
+position: relative;
+ height: 40px;
+ width: 40px;
  background: var(--bg-color);
  border-radius: 5px;
  color:white;
  transition: var(--transition);
  /* border: 1px solid var(--bg-color); */
 }
-
+.social-icon a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
 .social-icon a:hover {
     color: var(--bg-color);
     background: white;
+    border: 2px solid var(--bg-color);
 }
 
 
@@ -211,9 +204,14 @@ button {
     background-attachment: fixed;
     position: relative;
     top: 0;
-    z-index: -1;
 }
 
+.information .info-menu {
+    z-index: 10;
+}
+.information .info-menu :where(p,i)  {
+    text-shadow: 3px 5px rgba(0, 0, 0, 0.5);
+}
 .information::before {
     content: "";
     top: 0;
@@ -222,14 +220,17 @@ button {
     width: 100%;
     position:absolute;
     background: var(--bg-color);
-    z-index: 1;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 
 .information .item {
-    z-index: 2;
+    z-index: 5;
     transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
 }
 
 
@@ -301,4 +302,26 @@ button {
     }
 /* ========================== 2 image blocks =========================== */
 
+
+
+
+/* ========================== footer content =========================== */
+.footer-content a.nav-link {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.footer-content a.nav-link:hover {
+    color: var(--bg-color);
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+
+/* =========================== footer content =========================== */
 

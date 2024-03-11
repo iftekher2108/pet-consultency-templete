@@ -32,10 +32,10 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <!-- place navbar here -->
 
-        <nav class="navbar navbar-expand-sm navbar-dark ps-5 bg-dark text-white fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark ps-5 bg-dark text-white">
             <div class="container">
                 <img src="image/logo.png" alt="logo" height="45" width="100">
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -44,7 +44,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav m-auto gap-lg-4 mt-2 mt-lg-0">
+                    <ul class="navbar-nav ms-auto gap-lg-4 mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home</a>
                         </li>
@@ -58,33 +58,33 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="btn-group d-flex my-2 my-lg-0">
+                    <!-- <form class="btn-group d-flex my-2 my-lg-0">
                         <input class="form-control ms-lg-5 text-white rounded-0" type="text" placeholder="Search">
-                        <button class="btn btn-success text-white border border-0 rounded-0" type="submit"><i
+                        <button class="btn btn-success px-4 text-white border border-0 rounded-0" type="submit"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
-
-
     </header>
-    <main class="mt-4 mx-0">
+
+    <main>
 
         <!-- =======================================hero content start here=========================================== -->
-        <div class="hero p-5 m-0 row d-flex text-white justify-content-center align-items-center overflow-x-hidden">
-            <div class="hero-content col-lg-7 col-md-6 col-sm-12" data-aos="fade-right">
+        <div
+            class="hero p-lg-5 p-md-3 p-sm-3 m-0 row text-white justify-content-center align-items-center overflow-x-hidden">
+            <div class="hero-content col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
                 <h1 class="fw-bold text-uppercase">First I want to be a veterinarian</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellat dolorum velit repudiandae
                     molestiae. Delectus aperiam tempora nulla! Quod cum quae quidem praesentium ullam dolor vitae
                     repudiandae odio tempore sunt?</p>
                 <div class="but-group d-flex gap-3">
-                    <button class="btn px-4">Contact Us</button>
-                    <button class="btn btn-outline-light border border-2 border-white outline-2 px-4">Our
+                    <button class="btn px-5 py-2">Contact Us</button>
+                    <button class="btn btn-outline-light border border-2 border-white outline-2 px-5 py-2">Our
                         Service</button>
                 </div>
             </div>
-            <div class="hero-image col-lg-5 col-md-6 col-sm-12" data-aos="fade-left">
+            <div class="hero-image col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
                 <img src="image/hero-image.png" class="img-fluid" alt="hero-image">
             </div>
         </div>
@@ -99,7 +99,7 @@
                 <h1 class="fw-bold text-uppercase"> As a veterinarian and lover of animals</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, veniam. Atque ea at quos repellendus
                     animi nobis aliquid quod quis.</p>
-                <button class="btn px-4">Our Service</button>
+                <button class="btn px-5 py-2">Our Service</button>
             </div>
             <div class="animal-video col-lg-6 ">
                 <div class="p-lg-10 p-md-6 p-sm-3 ">
@@ -123,47 +123,66 @@
                 <h1 class="fw-bold text-uppercase">Latest News</h1>
                 <p>Laborum sint deleniti, quis dolorum consequatur a numquam quod ratione unde veritatis?</p>
             </div>
-            <div class="main-menu row p-5 text-white m-0 overflow-x-hidden" data-aos="fade-down">
+            <div class="main-menu row p-4 text-white m-0 overflow-x-hidden" data-aos="fade-down">
+
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="img mb-3">
-                        <img src="image/health-care-1.png" class="img-fluid img-thumbnail" alt="health-care-image">
-                    </div>
-                    <div class="care-content">
-                        <h3 class="fw-bolder">Veterinarian</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae praesentium explicabo, at
-                            culpa molestias delectus.</p>
+                    <div class="card bg-dark text-white shadow">
+                        <div class="img mb-3">
+                            <img src="image/health-care-1.png" class="img-fluid img-fluid w-100"
+                                alt="health-care-image">
+                        </div>
+                        <div class="care-content p-3">
+                            <h3 class="fw-bold text-primary text-uppercase">Veterinarian</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae praesentium explicabo,
+                                at
+                                culpa molestias delectus.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="img mb-3">
-                        <img src="image/health-care-2.png" class="img-fluid img-thumbnail" alt="health-care-image">
+                    <div class="card bg-dark text-white shadow">
+                        <div class="img mb-3">
+                            <img src="image/health-care-2.png" class="img-fluid img-fluid w-100"
+                                alt="health-care-image">
+                        </div>
+                        <div class="care-content p-3">
+                            <h3 class="fw-bold text-primary text-uppercase">Vaccination Care</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae praesentium explicabo,
+                                at
+                                culpa molestias delectus.</p>
+                        </div>
                     </div>
-                    <div class="care-content">
-                        <h3 class="fw-bolder">Vaccination Care</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae praesentium explicabo, at
-                            culpa molestias delectus.</p>
-                    </div>
+
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="img mb-3">
-                        <img src="image/health-care-3.png" class="img-fluid img-thumbnail" alt="health-care-image">
+                    <div class="card bg-dark text-white shadow">
+                        <div class="img mb-3">
+                            <img src="image/health-care-3.png" class="img-fluid img-fluid w-100"
+                                alt="health-care-image">
+                        </div>
+                        <div class="care-content p-3">
+                            <h3 class="fw-bold text-primary text-uppercase">Dental Care</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae praesentium explicabo,
+                                at
+                                culpa molestias delectus.</p>
+                        </div>
                     </div>
-                    <div class="care-content">
-                        <h3 class="fw-bolder">Dental Care</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae praesentium explicabo, at
-                            culpa molestias delectus.</p>
-                    </div>
+
+
                 </div>
 
+            </div>
+            <div class="w-100 d-flex justify-content-center align-items-center">
+                <a href="" class="btn btn-outline-info fw-bold border-2 text-uppercase px-5 py-2">Read More</a>
             </div>
         </div>
 
         <!-- =====================================health care end here================================================================== -->
 
 
-        <!-- ===================================veterinarian lover animals start here==================================================== -->
+        <!-- ===================================veterinarian VACCINATION CARE start here==================================================== -->
 
         <div
             class="veterinarian-lover-animal row d-flex  align-items-center justify-content-center p-5 m-0 overflow-x-hidden">
@@ -172,7 +191,7 @@
             <div class="animal-video col-lg-6 ">
                 <div class="p-lg-10 p-md-6 p-sm-3 ">
                     <div class="img-block ">
-                        <img src="./image/love-of-animals.jpg" class="img-fluid rounded-3">
+                        <img src="./image/vacsination-care.jpg" class="img-fluid rounded-3">
                     </div>
                 </div>
 
@@ -180,10 +199,10 @@
             </div>
 
             <div class="animals-content col-lg-6" data-aos="zoom-in">
-                <h1> As a veterinarian and lover of animals.</h1>
+                <h1 class="fw-bold text-uppercase">VACCINATION CARE And DENTAL CARE</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, veniam. Atque ea at quos repellendus
                     animi nobis aliquid quod quis.</p>
-                <button class="btn px-4">Our Service</button>
+                <button class="btn px-5 py-2">Our Service</button>
             </div>
 
         </div>
@@ -195,38 +214,49 @@
 
         <div class="pet-buy-menu p-5 m-0 overflow-x-hidden">
             <div class="care-title text-center text-white col-lg-4 col-sm-8 m-auto" data-aos="zoom-in">
-                <h1 class="fw-bolder">Title Here</h1>
+                <h1 class="fw-bold text-uppercase">Adoped a Pet</h1>
                 <p>Laborum sint deleniti, quis dolorum consequatur a numquam quod ratione unde veritatis?</p>
             </div>
-            <div class="main-menu row p-5 text-white m-0 overflow-x-hidden" data-aos="zoom-in">
+            <div class="main-menu row p-3 text-white m-0 overflow-x-hidden" data-aos="zoom-in">
                 <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-                    <div class="img mb-3">
-                        <img src="image/pet-dog-1.png" class="img-fluid img-thumbnail" alt="health-care-image">
+                    <div class="card shadow bg-dark text-white">
+                        <div class="img mb-3">
+                            <img src="image/pet-dog-1.png" class="img-fluid img-fluid w-100" alt="health-care-image">
+                        </div>
+                        <div class="care-content text-center">
+                            <h5 class="fw-bolder"><del>$50</del> $30</h5>
+                            <button class="btn btn-dark px-5 py-2 mb-3">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="care-content text-center">
-                        <h5 class="fw-bolder"><del>$50</del> $30</h5>
-                        <button class="btn btn-dark px-4">Buy Now</button>
-                    </div>
+
+
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-                    <div class="img mb-3">
-                        <img src="image/pet-dog-2.png" class="img-fluid img-thumbnail" alt="health-care-image">
+                    <div class="card shadow bg-dark text-white">
+                        <div class="img mb-3">
+                            <img src="image/pet-dog-2.png" class="img-fluid img-fluid w-100" alt="health-care-image">
+                        </div>
+                        <div class="care-content text-center">
+                            <h5 class="fw-bolder"><del>$40</del> $25</h5>
+                            <button class="btn btn-dark px-5 py-2 mb-3">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="care-content text-center">
-                        <h5 class="fw-bolder"><del>$40</del> $25</h5>
-                        <button class="btn btn-dark px-4">Buy Now</button>
-                    </div>
+
+
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-                    <div class="img mb-3">
-                        <img src="image/pet-dog-3.png" class="img-fluid img-thumbnail" alt="health-care-image">
+                    <div class="card shadow bg-dark text-white">
+                        <div class="img mb-3">
+                            <img src="image/pet-dog-3.png" class="img-fluid img-fluid w-100" alt="health-care-image">
+                        </div>
+                        <div class="care-content text-center">
+                            <h5 class="fw-bolder"><del>$45</del> $20</h5>
+                            <button class="btn btn-dark px-5 py-2 mb-3">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="care-content text-center">
-                        <h5 class="fw-bolder"><del>$45</del> $20</h5>
-                        <button class="btn btn-dark px-4">Buy Now</button>
-                    </div>
+
                 </div>
 
             </div>
@@ -240,59 +270,71 @@
 
         <div class="vetcare-team p-5 m-0 overflow-x-hidden">
             <div class="title text-center " data-aos="zoom-in">
-                <h1 class="fw-bolder">The Vetcare Team</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptate laboriosam aliquid,
+                <h1 class="fw-bold text-uppercase text-primary">The Vetcare Team</h1>
+                <p class="col-lg-6 col-md-8 col-sm-12 m-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Omnis voluptate laboriosam aliquid,
                     quisquam corrupti quam!</p>
             </div>
             <div class="doctor-team-menu row p-5 m-0" data-aos="fade-up">
+
                 <div class="col-lg-4">
-                    <div class="image">
-                        <img src="image/doctor-1.png" class="img-fluid" alt="doctor-team-image">
-                    </div>
-                    <div class="menu-content text-center fw-bolder my-4">
-                        <h3>Amelia lauren</h3>
-                        <h6>VETERINARY</h6>
-                        <div class="social-icon gap-3 d-flex justify-content-center m-0">
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="card shadow">
+                        <div class="image">
+                            <img src="image/doctor-1.png" class="img-fluid" alt="doctor-team-image">
+                        </div>
+                        <div class="menu-content text-center fw-bolder my-4">
+                            <h3>Amelia lauren</h3>
+                            <h6>VETERINARY</h6>
+                            <div class="social-icon gap-3 d-flex justify-content-center mt-3">
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="image">
-                        <img src="image/doctor-2.png" class="img-fluid" alt="doctor-team-image">
-                    </div>
-                    <div class="menu-content text-center fw-bolder my-4">
-                        <h3>Taylor Martin</h3>
-                        <h6>ADMINISTRATION</h6>
-                        <div class="social-icon gap-3 d-flex justify-content-center m-0">
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="card shadow">
+                        <div class="image">
+                            <img src="image/doctor-2.png" class="img-fluid" alt="doctor-team-image">
+                        </div>
+                        <div class="menu-content text-center fw-bolder my-4">
+                            <h3>Taylor Martin</h3>
+                            <h6>ADMINISTRATION</h6>
+                            <div class="social-icon gap-3 d-flex justify-content-center mt-3">
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
 
 
 
                 <div class="col-lg-4">
-                    <div class="image">
-                        <img src="image/doctor-3.png" class="img-fluid" alt="doctor-team-image">
-                    </div>
-                    <div class="menu-content text-center fw-bolder my-4">
-                        <h3>Eliza Rose</h3>
-                        <h6>VETERINARY</h6>
-                        <div class="social-icon gap-3 d-flex justify-content-center m-0">
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="card shadow">
+                        <div class="image">
+                            <img src="image/doctor-3.png" class="img-fluid" alt="doctor-team-image">
+                        </div>
+                        <div class="menu-content text-center fw-bolder my-4">
+                            <h3>Eliza Rose</h3>
+                            <h6>VETERINARY</h6>
+                            <div class="social-icon gap-3 d-flex justify-content-center mt-3">
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
 
 
@@ -307,32 +349,32 @@
 
         <!-- =====================================information start here============================================================= -->
 
-        <div class="information p-5 m-0 overflow-x-hidden" style="background: url(image/information-bg-image.png);">
-            <div class="info-menu d-lg-flex d-sm-block my-5 justify-content-evenly align-items-center gap-2 text-center"
+        <div class="information p-6 overflow-x-hidden" style="background: url(image/information-bg-image.png);">
+            <div class="info-menu row pt-0 mt-0 py-6 justify-content-evenly align-items-center text-center"
                 data-aos="zoom-in">
-                <div class="item">
-                    <div class="icon my-2">
+                <div class="item col">
+                    <div class="icon">
                         <i class="fa-solid fa-heart-pulse"></i>
                     </div>
-                    <p>+34793</p>
-                    <p>Happy Clients</p>
+                    <p class="display-4 fw-bold">34793+</p>
+                    <p class="fw-bold">Happy Clients</p>
 
                 </div>
 
-                <div class="item">
-                    <div class="icon my-2">
+                <div class="item col">
+                    <div class="icon ">
                         <i class="fa-solid fa-stethoscope"></i>
                     </div>
-                    <p>+45382</p>
-                    <p>Department</p>
+                    <p class="display-4 fw-bold">45382+</p>
+                    <p class="fw-bold">Department</p>
 
                 </div>
-                <div class="item">
-                    <div class="icon my-2">
+                <div class="item col">
+                    <div class="icon">
                         <i class="fa-solid fa-syringe"></i>
                     </div>
-                    <p>+54762</p>
-                    <p>Vaccinations</p>
+                    <p class="display-4 fw-bold">54762+</p>
+                    <p class="fw-bold">Vaccinations</p>
 
                 </div>
 
@@ -346,52 +388,60 @@
 
         <!-- =======================================recent posts start here============================================================ -->
 
-        <div class="recent-post p-5 m-0 overflow-x-hidden">
+        <div class="recent-post p-5 overflow-x-hidden">
             <div class="recent-title text-center" data-aos="zoom-in">
-                <h1>Recent Posts</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, exercitationem.</p>
+                <h1 class="text-uppercase fw-bold text-primary">Recent Posts</h1>
+                <p class="col-lg-6 col-md-8 col-sm-10 m-auto">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor
+                    sit amet adipisicing elit. Vitae, exercitationem. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Perferendis, neque.</p>
             </div>
-            <div class="post-items row m-0" data-aos="fade-down">
-                <div class="item col-lg-4 my-2">
-                    <div class="post-image">
-                        <img src="image/recent-post-1.png" class="img-fluid" alt="post-image">
-                    </div>
-                    <div class="post-content p-2">
-                        <h3 class="fw-bold">As a veterinarian and lover of animals</h3>
-                        <small>AUGUEST 21,2023</small>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nobis atque nihil cum
-                            blanditiis doloribus aliquid repellendus amet sint voluptas.</p>
-                        <h5>Read More+</h5>
-                    </div>
-                </div>
+            <div class="post-items row " data-aos="fade-down">
 
-
-                <div class="item col-lg-4 my-2">
-                    <div class="post-image">
-                        <img src="image/recent-post-2.png" class="img-fluid" alt="post-image">
-                    </div>
-                    <div class="post-content p-2">
-                        <h3 class="fw-bold">As a veterinarian and lover of animals</h3>
-                        <small>AUGUEST 22,2023</small>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nobis atque nihil cum
-                            blanditiis doloribus aliquid repellendus amet sint voluptas.</p>
-                        <h5>Read More+</h5>
+                <div class="item col-lg-4">
+                    <div class="card">
+                        <div class="post-image">
+                            <img src="image/recent-post-1.png" class="img-fluid" alt="post-image">
+                        </div>
+                        <div class="post-content p-3">
+                            <h3 class="fw-bold">As a veterinarian and lover of animals</h3>
+                            <small>AUGUEST 21,2023</small>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nobis atque nihil cum
+                                blanditiis doloribus aliquid repellendus amet sint voluptas.</p>
+                                <a href="" class="btn btn-outline-primary text-bold border-2 px-5 py-2">Read More+</a>
+                        </div>
                     </div>
                 </div>
 
 
+                <div class="item col-lg-4">
+                    <div class="card">
+                        <div class="post-image">
+                            <img src="image/recent-post-2.png" class="img-fluid" alt="post-image">
+                        </div>
+                        <div class="post-content p-3">
+                            <h3 class="fw-bold">As a veterinarian and lover of animals</h3>
+                            <small>AUGUEST 22,2023</small>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nobis atque nihil cum
+                                blanditiis doloribus aliquid repellendus amet sint voluptas.</p>
+                            <a href="" class="btn btn-outline-primary text-bold border-2 px-5 py-2">Read More+</a>
+                        </div>
+                    </div>
+                </div>
+
 
 
                 <div class="item col-lg-4 my-2">
-                    <div class="post-image">
-                        <img src="image/recent-post-3.png" class="img-fluid" alt="post-image">
-                    </div>
-                    <div class="post-content p-2">
-                        <h3 class="fw-bold">As a veterinarian and lover of animals</h3>
-                        <small>AUGUEST 23,2023</small>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nobis atque nihil cum
-                            blanditiis doloribus aliquid repellendus amet sint voluptas.</p>
-                        <h5>Read More+</h5>
+                    <div class="card">
+                        <div class="post-image">
+                            <img src="image/recent-post-3.png" class="img-fluid" alt="post-image">
+                        </div>
+                        <div class="post-content p-3">
+                            <h3 class="fw-bold">As a veterinarian and lover of animals</h3>
+                            <small>AUGUEST 23,2023</small>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nobis atque nihil cum
+                                blanditiis doloribus aliquid repellendus amet sint voluptas.</p>
+                                <a href="" class="btn btn-outline-primary text-bold border-2 px-5 py-2">Read More+</a>
+                        </div>
                     </div>
                 </div>
 
@@ -401,10 +451,19 @@
 
         </div>
 
-
         <!-- =======================================recent posts end here============================================================ -->
-
+   
     </main>
+
+
+    <div id="loader" class="fixed-top bg-white w-100 h-100">
+        <div class=" d-flex align-items-center justify-content-center w-100 h-100">
+            <img src="./image/loader.gif" class="img-fluid" alt="loader">
+        </div>
+
+    </div>
+
+
     <footer class="bg-dark text-white">
         <!-- place footer here -->
         <div class="footer-content p-5 m-0">
@@ -414,34 +473,37 @@
 
                 <div class="col-lg-3 col-sm-12">
                     <h4 class="fw-bold">About</h4>
-                    <a href="#" class="nav-link"> History</a>
-                    <a href="#" class="nav-link"> Our Team</a>
-                    <a href="#" class="nav-link"> Brand Guidelines</a>
-                    <a href="#" class="nav-link"> Terms & Condition</a>
-                    <a href="#" class="nav-link"> Privacy Policy</a>
+                    <a href="#" class="nav-link"> - History</a>
+                    <a href="#" class="nav-link"> - Our Team</a>
+                    <a href="#" class="nav-link"> - Brand Guidelines</a>
+                    <a href="#" class="nav-link"> - Terms & Condition</a>
+                    <a href="#" class="nav-link"> - Privacy Policy</a>
                 </div>
                 <div class="col-lg-3 col-sm-12">
                     <h4 class="fw-bold">Services</h4>
-                    <a href="#" class="nav-link"> How to Order</a>
-                    <a href="#" class="nav-link"> Our Product</a>
-                    <a href="#" class="nav-link"> Order Status</a>
-                    <a href="#" class="nav-link"> Pramo</a>
-                    <a href="#" class="nav-link"> Payment Method</a>
+                    <a href="#" class="nav-link"> - How to Order</a>
+                    <a href="#" class="nav-link"> - Our Product</a>
+                    <a href="#" class="nav-link"> - Order Status</a>
+                    <a href="#" class="nav-link"> - Pramo</a>
+                    <a href="#" class="nav-link"> - Payment Method</a>
                 </div>
                 <div class="col-lg-6 col-sm-12 text-end">
-                    <h4 class="m-0">Title Here</h4>
-                    <small class="m-0">Lorem ipsum dolor sit amet consectetur.</small>
-                    <form class="btn-group d-flex my-3 my-lg-0">
+                    <div>
+                        <img src="./image/logo.png" class="img-fluid" width="130" alt="logo">
+                    </div>
+                    <h4 class="text-uppercase">pet Store</h4>
+                    <p class="mb-3 small">Lorem ipsum dolor sit amet consectetur.</p>
+                    <form class="btn-group d-flex my-3">
                         <input class="form-control ms-lg-5 text-white rounded-0" type="text" placeholder="Search">
-                        <button class="btn btn-success text-white border border-0 rounded-0" type="submit"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <a class="btn btn-info text-white border px-5 border-0 rounded-0" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
                     </form>
 
                     <div class="social-icon d-flex gap-3 justify-content-end my-2  m-0">
-                        <a href="#" class="nav-link"> <i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="nav-link"> <i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="nav-link"> <i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="nav-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class=""> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class=""> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class=""> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class=""> <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
 
 
@@ -451,13 +513,11 @@
             <hr>
 
             <div class="copyright-section">
-                <h6 class="text-center">Copyright &copy; by <span>Iftekher mahmud</span> | developed by <span>Iftekher
-                        Mahmud</span> </h6>
+                <p class="text-center">Copyright &copy; 2018 - <span class="date">2023</span>  by <span class="text-primary fw-bold">Iftekher mahmud</span> | developed by <span class="text-primary fw-bold">Iftekher
+                        Mahmud</span> </p>
             </div>
 
         </div>
-
-
 
     </footer>
 
