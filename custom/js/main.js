@@ -13,6 +13,19 @@ $(function () {
         $('.navbar-collapse').collapse('hide');
     });
 
+    $('.gallery-extra .gallery-item').appendTo($('.gallery-grid').first());
+    $('.gallery-extra').remove();
+
+    var extraGalleryItems = [
+        ['care', 'image/health-care-3.png', 'Comfort first', 'Gentle support every day'],
+        ['happy', 'image/pet-dog-1.png', 'New friendships', 'Good care, happy homes'],
+        ['care', 'image/recent-post-1.png', 'Care in motion', 'Little routines matter'],
+        ['happy', 'image/recent-post-2.png', 'Bright moments', 'A little joy goes far']
+    ];
+    $.each(extraGalleryItems, function (_, item) {
+        $('.gallery-grid').first().append('<button class="gallery-item" data-category="' + item[0] + '" data-image="' + item[1] + '" aria-label="Open ' + item[2] + ' photo"><img src="' + item[1] + '" alt="' + item[2] + '"><span class="gallery-caption"><strong>' + item[2] + '</strong><span>' + item[3] + '</span></span></button>');
+    });
+
     $('.filter-btn').on('click', function () {
         var filter = $(this).data('filter');
         $('.filter-btn').removeClass('active');
